@@ -1,0 +1,17 @@
+type Author {
+  name: String!
+  email: String!
+  phone: Float!,
+  age: Int!,
+  country: String!,
+}
+
+
+type Query {
+  getAuthor: Author!
+}
+
+
+type Mutation {
+   editAuthor(name: String!): Author!
+}
